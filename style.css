@@ -18,3 +18,31 @@
 }
 
 /* Add your styles below here*/
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 0.5em;
+  background-color: dimgray;
+}
+
+.bg1, .bg2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #eee;
+  height: 300px;
+}
+
+.bg1:hover, .bg2:hover {
+  box-shadow: 2px 2px 2px 2px #00000050;
+}
+
+.bg1 div, .bg2 div {
+  background-color: rgba(0, 0, 0, 0.75);
+  margin: 3px;
+  padding: 5px;
+  text-align: center;
+}
